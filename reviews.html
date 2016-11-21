@@ -11,30 +11,38 @@
     
     <title>The World Of Drama</title>
     <style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:  #262626;
-
-    }
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
+.dropbtn {
+    background-color: #212121;
     color: white;
-    text-align: center;
-    padding: 18px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #5C5C5C;
+}
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
     text-decoration: none;
+    display: block;
 }
-
-li a:hover {
-    background-color: #111111;
-}
+.dropdown a:hover {background-color: #f1f1f1}
+.show {display:block;}
 </style>
   </head>
 
@@ -46,12 +54,33 @@ li a:hover {
         <header class="inner">
           <h1 id="project_title">The World Of drama</h1>
           <h2 id="project_tagline"></h2>
-          <ul>
-  <li><a class="active" href="https://antoniacarasel.github.io">Home</a></li>
-  <li><a href="https://antoniacarasel.github.io/#reviews">Reviews</a></li>
-  <li><a href="#essays">Essays</a></li>
-  <li><a href="#translations">Translations</a></li>
-</ul>
+     <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Explore</button>
+  <div  id="myDropdown" class="dropdown-content">
+    <a href="https://antoniacarasel.github.io/reviews">Reviews</a>
+    <a href="https://antoniacarasel.github.io/essays">Essays</a>
+    <a href="https://antoniacarasel.github.io/krusselinvaders">Krussel Invaders</a>
+    <a href="https://antoniacarasel.github.io/blog">Blog</a>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
         </header>
     </div>
