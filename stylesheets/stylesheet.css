@@ -56,7 +56,8 @@ body {
 }
 
 html { 
-  background: url(images/fundal_site.jpg) no-repeat center center fixed; 
+  background-image: /images/fundal_site.jpg; 
+  background-position:center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
