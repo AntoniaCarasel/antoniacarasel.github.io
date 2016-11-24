@@ -51,11 +51,18 @@ Theme Styles
 body {
  
   color:#373737;
-  background-image: url("fundal_site.jpg");
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+html { 
+  background: url(images/fundal_site.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1 {
