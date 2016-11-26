@@ -123,7 +123,7 @@ strong {
   -moz-box-shadow: 0 0 5px #ebebeb;
   -o-box-shadow: 0 0 5px #ebebeb;
   -ms-box-shadow: 0 0 5px #ebebeb;
-}*/
+}
 
 p img {
   display: inline;
@@ -132,7 +132,7 @@ p img {
   vertical-align: middle;
   text-align: center;
   border: none;
-}
+}*/
 
 pre, code {
   width: 100%;
